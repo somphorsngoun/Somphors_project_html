@@ -1,0 +1,440 @@
+/* Same style ...........................*/
+body{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    background: rgb(8, 7, 6);
+
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    background: rgb(8, 7, 6);
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+    padding-right: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    color: rgb(240, 115, 57);
+    /* padding: 10px; */
+}
+nav ul a{
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+}
+nav ul:nth-child(2) a:nth-child(1),
+nav ul:nth-child(2) a:nth-child(3),
+nav ul:nth-child(2) a:nth-child(4){
+    color: rgb(240, 115, 57);
+}
+
+footer{
+    padding: 40px;
+}
+footer i{
+    /* margin: 10px; */
+    width: 40px;
+    float: right;
+    color: white;
+}
+
+/* home style ....................................................................*/
+.camera{
+    width: 85%;
+    height: 100vh;
+    /* background: red; */
+    background-image: url('https://cdn.pixabay.com/photo/2014/12/13/10/24/camera-566421_960_720.jpg');
+    background-size: cover;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+    -webkit-font-smoothing: antialiased;
+    margin-top: -0px;
+
+}
+
+.camera .forum h1{
+    color: rgb(240, 115, 57);
+    text-align: center;
+    font-size: 90px;
+    /* letter-spacing: 0.02em; */
+    font-family: Helvetica, sans-serif;
+    text-transform: uppercase;
+    
+}
+
+.camera .forum {
+    text-align: center;
+}
+.camera .forum h1:nth-child(2),
+.camera .forum h1:nth-child(3){
+    margin-top: -70px;
+}
+
+.button {
+    width: 35%;
+    height: 10vh;
+    color: rgb(240, 115, 57);
+    font-size: 18px;
+    border: 3px solid rgb(240, 115, 57);
+    background: rgba(34, 34, 34, 0.603);
+    outline: none;
+}
+.button:hover {
+    background: rgb(240, 115, 57);
+    color: black;
+}
+
+.subscribe {
+    color: rgba(255, 255, 255, 0.644);
+    text-align: center;
+    height: 35vh;
+    margin-top: 50px;
+}
+
+.sub-mail,
+.btn-sub{
+    height: 7vh;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.mail-sub{
+    width: 20%;
+    padding-left: 20px;
+    background: rgba(27, 27, 27, 0.651);
+    color: white;
+}
+.mail-sub:hover{
+    background: rgba(255, 255, 255, 0.39);
+}
+
+.btn-sub{
+    width: 10%;
+    border: none;
+    margin-top: 30px;
+}
+.btn-sub:hover{
+    background: rgb(240, 115, 57);
+    color: white;
+}
+
+
+/* About style ..............................................................*/
+.about-photographer{
+    width: 90%;
+    height: 80vh;
+    background-image: url('../Images/Photography.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+.paragraph{
+    width: 40%;
+    height: 65vh;
+    background: rgba(214, 209, 209, 0.267);
+    margin-left: 10%;
+
+}
+.paragraph h1{
+    color: rgb(240, 115, 57);
+    text-align: center;
+    font-size: 35px;
+}
+.paragraph p{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.client h1{
+    color: rgb(240, 115, 57);
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+}
+.pic-client {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.logo-client {
+    width: 10%;
+    height: 10%;
+}
+
+
+/* Photos style ..............................................................*/
+
+.sub-menu-1 {
+    display: none;
+}
+nav ul li:hover .sub-menu-1 ul {
+    display: block;
+    margin: 10px;
+}
+nav ul li:hover .sub-menu-1 {
+    display: block;
+    position: absolute;
+    background: rgba(41, 40, 39, 0.493);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+nav ul li:hover .sub-menu-1 ul li {
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+nav ul li:hover .sub-menu-1 ul li:last-child {
+    border-bottom: none;
+}
+nav ul li:hover .sub-menu-1 ul li a:hover {
+    color: rgb(240, 115, 57);
+}
+
+.place,
+.event,
+.neture,
+.fashion{
+    width: 70%;
+    height: 90vh;
+    margin: auto;
+    background-size: cover;
+    margin-top: 30px;
+}
+
+.place{
+    background-image: url('https://static.toiimg.com/photo/79405406.cms');
+}
+.event{
+    background-image: url('https://bigbuzzideagroup.com/wp-3/wp-content/uploads/2017/04/RedCarpet.jpg');
+}
+.neture{
+    background-image: url('../Images/netrue.jpg');
+}
+.fashion{
+    background-image: url('../Images/fashion.jpg');
+}
+
+.place .bg-place,
+.event .bg-event,
+.neture .bg-neture,
+.fashion .bg-fashion{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
+    visibility: hidden;
+    background: rgba(255, 255, 255, 0.603);
+}
+
+.place .bg-place h2,
+.event .bg-event h2,
+.neture .bg-neture h2,
+.fashion .bg-fashion h2{
+    font-size: 60px;
+    color: rgb(240, 115, 57);
+}
+
+.place:hover .bg-place,
+.event:hover .bg-event,
+.neture:hover .bg-neture,
+.fashion:hover .bg-fashion{
+    visibility: visible;
+
+}
+
+
+/* Contact style ..............................................................*/
+.contact {
+    display: flex;
+    justify-content: space-around;
+}
+.contact-info{
+    width: 40%;
+}
+.contact-info h1{
+    color: rgb(240, 115, 57);
+}
+
+.email,
+.Address,
+.phone-number{
+    width: 60%;
+    height: 30vh;
+    text-align: center;
+    border-radius: 12px;
+    color: white;
+}
+
+.form {
+    width: 50%;
+    margin-left: -150px;
+    margin-top: 50px;
+}
+.first-name,
+.last-name,
+.tel,
+.age {
+    width: 45%;
+
+}
+
+.first-name,
+.last-name,
+.tel,
+.age,
+.form-email,
+.email,
+.Address,
+.phone-number {
+    font-size: 18px;
+    outline: none;
+    border: none;
+    background: none;
+    border-bottom: 2px solid rgb(238, 107, 31);
+    color: white;
+}
+.first-name,
+.last-name,
+.tel,
+.age,
+.form-email {
+    margin-top: 30px;
+    padding-top: 40px;
+}
+.form-email {
+    width: 90%;
+    
+}
+textarea{
+    margin-top: 50px;
+    font-size: 18px;
+    padding: 5px;
+    outline: none;
+    border: 1px solid rgb(238, 107, 31);
+    background: rgba(182, 181, 181, 0.562);
+}
+textarea::placeholder{
+    color: white;
+
+}
+
+.first-name:hover,
+.last-name:hover,
+.tel:hover,
+.age:hover,
+.form-email:hover{
+    border: 1px solid rgb(238, 107, 31);
+} 
+.submit{
+    width: 45%;
+    font-size: 18px;
+    color: rgb(238, 107, 31);
+    outline: none;
+    border-radius: 25px;
+    border: 2px solid rgb(238, 107, 31);
+    background: rgb(0, 0, 0);
+    padding: 20px;
+    margin-top: 50px;
+}
+.submit:hover,
+.log-in:hover {
+    color: black;
+    background:  rgb(238, 107, 31);
+}
+
+/* Login and register style................................................ */
+
+.back i{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    margin: 30px;
+}
+.register {
+    display: flex;
+    justify-content: space-around;
+}
+.sub-login,
+.register-form{
+    width: 40%;
+    color: white;
+
+}
+.sub-login h1,
+.register-form h1 {
+    color: rgb(238, 107, 31);
+}
+
+.or h3{
+    text-align: center;
+    color: rgb(238, 107, 31);
+
+}
+.ruler {
+    width: 2px;
+    height: 35vh;
+    background: white;
+    margin: auto;
+}
+
+.sub-login label{
+    font-size: 18px;
+}
+
+#username,
+#login-mail,
+#password {
+    width: 90%;
+    border: none;
+    border-bottom: 2px solid rgb(238, 107, 31);
+    outline: none;
+    padding: 10px;
+    background: none;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.log-in{
+    width: 93%;
+    padding: 10px;
+    outline: none;
+    background: none;
+    border-radius: 20px;
+    border: 2px solid rgb(238, 107, 31);
+    color: rgb(238, 107, 31);
+    font-size: 16px;
+}
+#checkbox {
+    margin-top: -50px;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
