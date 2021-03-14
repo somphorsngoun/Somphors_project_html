@@ -70,9 +70,12 @@ footer i{
     background-position: top;
     -webkit-font-smoothing: antialiased;
     margin-top: -0px;
-
+    /* animation: mymove 5s infinite; */
 }
-
+/* @keyframes mymove {
+    from {background-image: url('https://cdn.pixabay.com/photo/2014/12/13/10/24/camera-566421_960_720.jpg');}
+    to {background-image: url('Images/camera1.jpg');}
+  } */
 .camera .forum h1{
     color: rgb(240, 115, 57);
     text-align: center;
@@ -140,7 +143,9 @@ footer i{
     background: rgb(240, 115, 57);
     color: white;
 }
-
+#br {
+    display: none;
+}
 
 /* About style ..............................................................*/
 .about-photographer{
@@ -272,7 +277,6 @@ nav ul li:hover .sub-menu-1 ul li a:hover {
 
 }
 
-
 /* Contact style ..............................................................*/
 .contact {
     display: flex;
@@ -293,6 +297,7 @@ nav ul li:hover .sub-menu-1 ul li a:hover {
     text-align: center;
     border-radius: 12px;
     color: white;
+    overflow: hidden;
 }
 
 .form {
@@ -331,7 +336,8 @@ nav ul li:hover .sub-menu-1 ul li a:hover {
     margin-top: 30px;
     padding-top: 40px;
 }
-.form-email {
+.form-email,
+.message {
     width: 90%;
     
 }
@@ -437,4 +443,74 @@ textarea::placeholder{
     margin-top: -50px;
     margin-bottom: 20px;
     font-size: 30px;
+}
+@media (min-width:900px) and (max-width:1200px){
+    nav ul:nth-child(3){
+        flex-direction: column;
+    }
+}
+@media (max-width:900px) {
+    .camera .forum h1 {
+        font-size: 50px;
+    }
+    .camera .forum h1:nth-child(2),
+    .camera .forum h1:nth-child(3){
+        margin-top: -30px;
+    }
+    .btn-sub {
+        width: 20%;
+    }
+    #br{
+        display: block;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .about-p1 {
+        display: none;
+    }
+    .about-p2 {
+        display: block;
+    }
+    .paragraph {
+        width: 80%;
+    }
+    .about-photographer {
+        background-image: url('https://www.ivanyolo.com/wp-content/uploads/2020/05/personal-travel-photographer-kl.jpg');
+    }
+    .contact {
+        flex-direction: column;
+    }
+    .email,
+    .Address,
+    .phone-number{
+        width: 100%;
+    }
+    .contact-info {
+        margin: auto;
+    }
+    .form {
+        margin: auto;
+    }
+
+    .register {
+        flex-direction: column;
+    }
+    .sub-login,
+    .register-form{
+        margin: auto;
+    }
+    .or {
+        display: flex;
+    }
+    .ruler{
+        width: 40%;
+        height: 2px;
+    }
+
+    #username,
+    #login-mail,
+    #password {
+        width: 130%;
+}
 }
