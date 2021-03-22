@@ -72,10 +72,7 @@ footer i{
     margin-top: -0px;
     /* animation: mymove 5s infinite; */
 }
-/* @keyframes mymove {
-    from {background-image: url('https://cdn.pixabay.com/photo/2014/12/13/10/24/camera-566421_960_720.jpg');}
-    to {background-image: url('Images/camera1.jpg');}
-  } */
+
 .camera .forum h1{
     color: rgb(240, 115, 57);
     text-align: center;
@@ -239,7 +236,7 @@ nav ul li:hover .sub-menu-1 ul li a:hover {
     background-image: url('https://static.toiimg.com/photo/79405406.cms');
 }
 .event{
-    background-image: url('https://bigbuzzideagroup.com/wp-3/wp-content/uploads/2017/04/RedCarpet.jpg');
+    background-image: url('https://moviescoremagazine.com/wp-content/uploads/2020/06/Plan-The-Next-Event-Successfully-With-An-Experienced-Event-Management-Agency.jpg');
 }
 .neture{
     background-image: url('../Images/netrue.jpg');
@@ -444,6 +441,39 @@ textarea::placeholder{
     margin-bottom: 20px;
     font-size: 30px;
 }
+#place-pic,
+#event-pic,
+#fashion-pic {
+    width: 80%;
+    /* height: 100vh; */
+    margin: auto;
+    background: rgb(255, 255, 255);
+    text-align: center;
+    display: none;
+    padding-top: 50px;
+}
+#place-pic img,
+#event-pic img {
+    width: 49%;
+    height: 50vh;
+    
+}
+#fashion-pic img{
+    width: 40%;
+    height: 95vh;
+}
+.top {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+#back {
+    font-size: 40px;
+    color: rgb(238, 107, 31);
+}
+
+
 @media (min-width:900px) and (max-width:1200px){
     nav ul:nth-child(3){
         flex-direction: column;
